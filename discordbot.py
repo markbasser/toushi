@@ -71,7 +71,7 @@ async def on_message(message):
         embed = discord.Embed(title="おみくじ", description=f"{message.author.mention}さんの今日の運勢は！",
                               color=0x2ECC69)
         embed.set_thumbnail(url=message.author.avatar_url)
-        embed.add_field(name="[GAME運勢] ",
+        embed.add_field(name="[投資運勢InvestmentFortune] ",
                         value=random.choice(('☆☆彡超最高☆彡☆【大幅利食い！アルゴに勝つ！】','☆最高☆【日経平均に関係なく材料株の押し目で利幅を出せます☆彡】','やったね☆！【納得出来る日でしょう。想定外であった動きで利益を出せます。】'
                                              ,'大吉【☆☆☆自信もって取り組めば必ず好成果となって返ってきます。♡♡♡株価ボードを眺めたら発想する銘柄が当たり】', '中吉【☆☆好チャンス！買増しで攻めて成果あり。♡♡とりあえず問題なしかな！？】', '小吉【☆☆通常の押し目セオリーを変化させたら好成果となる。♡♡】'
                                              ,  '末吉【☆☆SNSで見た銘柄が当たる！♡少し息抜きも考えて、外出したら吉あり】', '吉【☆現状変化なし♡特に変化なし。コスト抜けはする！】',  '吉【☆まぁ！こんなもんよ。日経読んでみて下さい。発見ある！”】'
