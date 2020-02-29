@@ -80,10 +80,15 @@ async def on_message(message):
                                              , '凶【▲残念！好機はないね。負けも勝ちの内かと思え！見切り千両】', '大凶【▲▲やばい！ロスカットも想定に！駄目だこりゃ】', '凶【▲悲しい幅のリバウンドであってもカットをする事も大切！', '凶【▲次第に貴方の銘柄は見放されている。見直しをすれば吉になるかも！】', '吉【▲待ちスタンスで我慢も大切。翌営業日にかけるしかない！】', '凶【▲焦りは禁物。我慢も大切。しかしロスカットも大切】', '大大凶【▲▲▲言葉に表せない...。終了！】')), inline=False)
         await message.channel.send(embed=embed)
 
-    elif message.content == "!ダイレクトメッセージ":
+    elif message.content == "!DM":
         # ダイレクトメッセージ送信
         dm = await message.author.create_dm()
-        await dm.send(f"{message.author.mention}さんにダイレクトメッセージ")
+        await dm.send(f"{message.author.mention}さん　投資情報に参加いただきありがとうございます")
+        
+            elif message.content == "!BEN":
+        # ダイレクトメッセージ送信
+        dm = await message.author.create_dm()
+        await dm.send(f"{message.author.mention}さん BEN COIN🎁10000BEN　🎉/申請後1日位後にウズラウォレットで残高確認【/info BEN】して下さい。ウズラウォレット開設は【/info /help】です。　")
 
 
 client.run(token)
